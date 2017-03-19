@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    name: mydb
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    url: jdbc:mysql://localhost:3306/test1?autoReconnect=true&useSSL=false
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+    minIdle: 5
+    maxActive: 10
+    initialSize: 5
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+
+management.security.enabled: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+logging.level.org.springframework.transaction.interceptor: TRACE

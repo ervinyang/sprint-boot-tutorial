@@ -13,6 +13,9 @@
         <module>jersey-spring-boot</module>
         <module>simple-spring-boot</module>
         <module>multi-datasource-spring-boot</module>
+        <module>spring-cloud-config-server</module>
+        <module>spring-cloud-config-client</module>
+        <module>single-datasource-spring-boot</module>
     </modules>
 
 
