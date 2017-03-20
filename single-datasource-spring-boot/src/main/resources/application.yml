@@ -14,6 +14,8 @@ spring:
 
 management.security.enabled: false
 
+spring.thymeleaf.cache: false
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 

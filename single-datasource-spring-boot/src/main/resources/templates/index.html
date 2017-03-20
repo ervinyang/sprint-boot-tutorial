@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout">
+<head>
+    <title>welcome</title>
+</head>
+<body>
+<!--/*@thymesVar id="userInfo" type="me.ervin.tutorial.pojo.UserInfo"*/-->
+<h1 layout:fragment="header" th:text="${'Welcome ' + userInfo.name}">Welcome default</h1>
+<div layout:fragment="content" class="container">
+    <div class="pull-right">
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>name</td>
+            <td>pwd</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${userInfo.id}">1</td>
+            <td th:text="${userInfo.name}">aha err!</td>
+            <td >****</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

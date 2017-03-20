@@ -16,6 +16,10 @@ public class TestService {
     @Autowired
     private TestMapper testMapper;
 
+    public UserInfo selectRecentOne(){
+        return testMapper.selectRecentOne();
+    }
+
     @Transactional(rollbackFor = Exception.class)
     public void insertTransactional() {
         boolean transactionActive = TransactionSynchronizationManager.isActualTransactionActive();
