@@ -16,6 +16,7 @@
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-config-client</module>
         <module>single-datasource-spring-boot</module>
+        <module>spring-cloud-eureka-server</module>
     </modules>
 
     <parent>
